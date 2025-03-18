@@ -27,12 +27,63 @@ To run this bot, you will need:
 
 ### 1. Clone the repository or create your own project folder.
 
-```bash
-git clone https://github.com/your-username/discord-roster-bot.git
-cd discord-roster-bot
+	· git clone https://github.com/your-username/discord-roster-bot.git
 
-2. Install dependencies.
-bash
-Kopieren
-Bearbeiten
-npm install discord.js
+	· cd discord-roster-bot
+
+### 2. Install dependencies.
+
+	· npm install discord.js
+
+
+### 3. Configure the bot.
+
+	· Replace YOUR_CHANNEL_ID with the ID of the channel where the bot will send the roster panel.
+	· Replace YOUR_DISCORD_IMAGE_LINK with the image link that you want to use in the embed.
+	· Replace YOUR_DISCORD_TOKEN with your actual Discord bot token.
+
+### 4. Run the Bot.
+
+  node index.js
+
+  
+   
+
+The bot should now be live and responding to interactions in your specified Discord channel.
+
+
+
+
+### Code Breakdown
+
+Embed Setup: The bot creates a main panel embed with a dropdown menu that allows users to select different categories.
+
+Interaction Handling: Based on the user's selection, the bot sends an embed message with the relevant information.
+
+Customization: You can easily change the content and appearance of the embeds, as well as add additional categories.
+
+
+
+
+### Customization
+
+You can modify the following sections to personalize the bot for your server:
+
+staffText: Add or remove staff members.
+
+boosterText: List of active server boosters.
+
+developerText: Information about the bot developers.
+
+spielerText: List of players and their respective teams.
+
+Embed settings like embedColor and imageEmbed can also be modified to suit your server's theme.
+
+
+
+
+
+### License
+
+This bot is open-source. Feel free to use, modify, and contribute to the project!
+
