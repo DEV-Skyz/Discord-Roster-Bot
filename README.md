@@ -27,7 +27,7 @@ To run this bot, you will need:
 
 ### 1. Clone the repository or create your own project folder.
 
-	· git clone 
+	· git clone https://github.com/DEV-Skyz/Discord-Roster-Bot.git
 
 	· cd discord-roster-bot
 
