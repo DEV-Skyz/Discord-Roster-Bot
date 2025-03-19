@@ -44,7 +44,7 @@ To run this bot, you will need:
 
 ### 4. Run the Bot.
 
-  node index.js
+	· node index.js
 
   
    
