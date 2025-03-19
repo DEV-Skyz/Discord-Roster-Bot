@@ -63,7 +63,7 @@ const imageEmbed = new EmbedBuilder()
   .setImage('YOUR_DISCORD_IMAGE_LINK')
   .setColor(embedColor);
 
-// URL für die "Linien"-Grafik, die unter jedem Text-Embed angezeigt wird
+// URL for the "lines" graphic that appears under each text embed
 const lineImageUrl = 'YOUR_DISCORD_IMAGE_LINK';
 
 client.once('ready', async () => {
@@ -123,7 +123,7 @@ client.on('interactionCreate', async interaction => {
     const selected = interaction.values[0];
 
     if (selected === 'staff') {
-      // Embed für Staff Team
+      // Embed for Staff Team
       const staffEmbed = new EmbedBuilder()
         .setTitle('👥 STAFF TEAM')
         .setDescription('> Here you can see our current staff team:')
@@ -134,7 +134,7 @@ client.on('interactionCreate', async interaction => {
       await interaction.reply({ embeds: [imageEmbed, staffEmbed], ephemeral: true });
     }
     else if (selected === 'booster') {
-      // Embed für Booster
+      // Embed for Booster
       const boosterEmbed = new EmbedBuilder()
         .setTitle('🚀 BOOSTER')
         .setDescription('> Here you can see our active boosters:')
@@ -145,7 +145,7 @@ client.on('interactionCreate', async interaction => {
       await interaction.reply({ embeds: [imageEmbed, boosterEmbed], ephemeral: true });
     }
     else if (selected === 'developer') {
-      // Embed für Entwickler Team
+      // Embed für Developer Team
       const developerEmbed = new EmbedBuilder()
         .setTitle('💻 DEVELOPER')
         .setDescription('> Information about the bot developers:')
@@ -156,7 +156,7 @@ client.on('interactionCreate', async interaction => {
       await interaction.reply({ embeds: [imageEmbed, developerEmbed], ephemeral: true });
     }
     else if (selected === 'spieler') {
-      // Embed für Spieler
+      // Embed for Player
       const spielerEmbed = new EmbedBuilder()
         .setTitle(':video_game: Player')
         .setDescription('> Here you can see our active players:')
